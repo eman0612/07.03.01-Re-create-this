@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <a href="#"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
           </svg>
           Pomofocus</a
         >
-        <ul>
+        <ul class="header-ul">
           <li>
             <a href="#">
               <svg
@@ -87,95 +87,96 @@
     </header>
 
     <main>
-      <div>
-        <div>
-          <div>
+      <div class="wrapper">
+        <div class="clock-container">
+          <ul>
             <button>Pomodoro</button>
             <button>Short Break</button>
             <button>Long Break</button>
-          </div>
+          </ul>
           <time data-time="24:59">24:59</time>
           <button>Start</button>
         </div>
-        <div>Working on</div>
-        <div>Milk the cat</div>
+
+        <div class="task-container">
+          <div class="task-working">
+            <p>Working on</p>
+            <p>Milk the cat</p>
+          </div>
+          <div class="task-bar">
+            <p>Tasks</p>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots-vertical"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                />
+              </svg>
+            </button>
+          </div>
+          <button class="task-mtk">
+            <img src="" alt="" />
+            <p>Milk the cat</p>
+            <p>0 <span>/1</span></p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-three-dots-vertical"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+              />
+            </svg>
+          </button>
+
+          <button class="task-code">
+            <img src="" alt="" />
+            <p>Code this</p>
+            <p>0 <span>/1</span></p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-three-dots-vertical"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+              />
+            </svg>
+          </button>
+
+          <button class="task-add">
+            <img src="" alt="Add Task" />
+          </button>
+
+          <div class="task-timer">
+            <p>Est: <span>1</span></p>
+            <p>Act: <span>0</span></p>
+            <p>Finish at: <time data-time="13:57">13:57</time></p>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <div>
-          <div>Tasks</div>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots-vertical"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <div>Milk the cat</div>
-          <div>0 <span>/1</span></div>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots-vertical"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <div>Code this</div>
-          <div>0 <span>/1</span></div>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots-vertical"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <button><img src="" alt="Add Task" /></button>
-        </div>
-        <div>
-          <div>Est: <span>1</span></div>
-          <div>Act: <span>0</span></div>
-          <div>Finish at: <time data-time="13:57">13:57</time></div>
-        </div>
-      </div>
-
-      <div>
+      <div class="text">
         <h1>An online Pomodoro Timer to boost your productivity</h1>
         <h2>What is Pomofocus?</h2>
         <p>
           Pomofocus is a customizable pomodoro timer that works on desktop &
           mobile browser. The aim of this app is to help you focus on any task
           you are working on, such as study, writing, or coding. This app is
-          inspired by <a href="#">Pomodoro Technique</a> which is a time
-          management method developed by Francesco Cirillo.
+          inspired by <a class="link" href="#">Pomodoro Technique</a> which is a
+          time management method developed by Francesco Cirillo.
         </p>
 
         <h2>What is Pomodoro Technique?</h2>
@@ -185,27 +186,40 @@
           down work into intervals, traditionally 25 minutes in length,
           separated by short breaks. Each interval is known as a pomodoro, from
           the Italian word for 'tomato', after the tomato-shaped kitchen timer
-          that Cirillo used as a university student. - <a href="#">Wikipedia</a>
+          that Cirillo used as a university student. -
+          <a class="link" href="#">Wikipedia</a>
         </p>
 
         <h2>How to use the Pomodoro Timer?</h2>
         <ol>
-          <li>Add tasks to work on today</li>
-          <li>Set estimate pomodoros (1 = 25min of work) for each tasks</li>
-          <li>Select a task to work on</li>
-          <li>Start timer and focus on the task for 25 minutes</li>
-          <li>Take a break for 5 minutes when the alarm ring</li>
-          <li>Iterate 3-5 until you finish the tasks</li>
+          <li class="text-howto">Add tasks to work on today</li>
+          <li class="text-howto">
+            Set estimate pomodoros (1 = 25min of work) for each tasks
+          </li>
+          <li class="text-howto">Select a task to work on</li>
+          <li class="text-howto">
+            Start timer and focus on the task for 25 minutes
+          </li>
+          <li class="text-howto">
+            Take a break for 5 minutes when the alarm ring
+          </li>
+          <li class="text-howto">Iterate 3-5 until you finish the tasks</li>
         </ol>
 
         <h2>Features</h2>
         <ul>
-          <li>Responsive design that works with desktop and mobile</li>
-          <li>
+          <li class="text-features">
+            Responsive design that works with desktop and mobile
+          </li>
+          <li class="text-features">
             Color transition to switch moods between work time and rest time
           </li>
-          <li>Audio notification at the end of a timer period</li>
-          <li>Customizable timer intervals to suit your preference</li>
+          <li class="text-features">
+            Audio notification at the end of a timer period
+          </li>
+          <li class="text-features">
+            Customizable timer intervals to suit your preference
+          </li>
         </ul>
       </div>
     </main>
@@ -216,7 +230,7 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Simple Version</a></li>
       </ul>
-      <div>
+      <div class="social-logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -256,9 +270,9 @@
       </div>
       <small>
         KEA / MMD International / 2nd Semester / Autumn 2022 /
-        <a href="https://github.com/eman0612">Emanuel Sobral</a> </small
-      ><br />
-      <small>©Pomofocus 2021. All Rights Reserved.</small>
+        <a href="https://github.com/eman0612">Emanuel Sobral</a>
+        <br />©Pomofocus 2021. All Rights Reserved.</small
+      >
     </footer>
     <script src="/script.js"></script>
   </body>
